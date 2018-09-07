@@ -20,7 +20,7 @@ function viewCart() {
   var newCart = [];
   //var text = "In your cart, you have ";
   for(let i = 0; i < getCart().length; i++){
-     newCart.push(` ${getCart()[i].itemName}  at $${getCart()[i].itemPrice}`);
+     newCart.push(` ${getCart()[i].itemName} at $${getCart()[i].itemPrice}`);
      }
     // newCart.splice(-1, 0, `and ${getCart()[cart.length -1]//.itemName} at  $${getcart()[cart.length -1].itemPrice}.`);
      return  "In your cart, you have" + newCart;
