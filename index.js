@@ -52,8 +52,9 @@ function removeFromCart(item) {
   }
   return cart;
 }
-var t = `${total()}`;
+
 function placeOrder(cardNumber) {
+  var to = total();
   if(cardNumber === undefined){
     return "Sorry, we don't have a credit card on file for you.";
   }else{
