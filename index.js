@@ -40,7 +40,7 @@ function total(){
 }
 
 function removeFromCart(item) {
-  nCart = [];
+  var nCart = [];
   for(let i = 0; i < cart.length; i++){
     cart[i].itemName;
     if(cart[i].itemName ===item){
