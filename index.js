@@ -22,7 +22,7 @@ function viewCart() {
   for(let i = 0; i < getCart().length; i++){
      newCart.push(`${getCart()[i].itemName}  at $${getCart()[i].itemPrice},`);
      }
-     newCart.splice(-1, 0, `and ${getCart()[-1].itemName} at  $${getcart()[-1].itemPrice}.`);
+     newCart.splice(-1, 0, `and ${getCart()[getCart().length -1].itemName} at  $${getcart()[-1].itemPrice}.`);
      return  "In your cart, you have" + newCart;
   }else if(getCart().length === 1){
        return `In your cart, you have ${getCart()[0].itemName} at $${getCart()[0].itemPrice}.`;
