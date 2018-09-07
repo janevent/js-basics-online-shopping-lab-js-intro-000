@@ -47,7 +47,10 @@ function removeFromCart(item) {
       nCart.push(cart[i].itemName);
       cart.splice(i, 1);
     }
-  }return cart;
+  }if(nCart.length === 0){
+    console.log("That item is not in your cart.")
+  }
+  return cart;
 }
 
 function placeOrder(cardNumber) {
