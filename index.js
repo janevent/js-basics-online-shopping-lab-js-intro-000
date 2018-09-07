@@ -22,6 +22,7 @@ function viewCart() {
   for(let i = 0; i < getCart().length -1; i++){
      newCart.push(` ${getCart()[i].itemName} at $${getCart()[i].itemPrice}`);
      }
+     newCart.push(` and ${getCart()[getCart.length -1].itemName} at $${getCart()[getCart().length -1].itemPrice}.`)
     // newCart.splice(-1, 0, `and ${getCart()[cart.length -1]//.itemName} at  $${getcart()[cart.length -1].itemPrice}.`);
      return  "In your cart, you have" + newCart;
   }else if(getCart().length === 1){
