@@ -19,7 +19,7 @@ function viewCart() {
   if(getCart().length > 1){
   var newCart = [];
   //var text = "In your cart, you have ";
-  for(let i = 0; i < getCart().length; i++){
+  for(let i = 0; i < getCart().length -1; i++){
      newCart.push(` ${getCart()[i].itemName} at $${getCart()[i].itemPrice}`);
      }
     // newCart.splice(-1, 0, `and ${getCart()[cart.length -1]//.itemName} at  $${getcart()[cart.length -1].itemPrice}.`);
