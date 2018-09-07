@@ -60,6 +60,6 @@ function placeOrder(cardNumber) {
   }else{
     for(let i = 0; i < cart.length; i++){
       cart.pop(i);
-    } return `Your total cost is $${t}, which will be charged to the card ${cardNumber}.`;
+    } return `Your total cost is $${to}, which will be charged to the card ${cardNumber}.`;
   }
 }
